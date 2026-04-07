@@ -10,4 +10,5 @@
 **[English]**
 All CTF writeups in this repository (including but not limited to methodologies, code, text descriptions, and images) are the original work of the author. This repository is provided strictly for **online viewing and educational purposes only**.
 **Unauthorized copying, reproduction, modification, distribution, or commercial/non-commercial use of any content herein is strictly prohibited without explicit written permission from the author.** The author reserves the right to issue DMCA takedown notices and take legal action against any copyright infringement.
+
 This library is a collection of notes the author jotted down on a whim, documenting the process of solving cryptography and steganography challenges encountered in real life or during CTF competitions.
