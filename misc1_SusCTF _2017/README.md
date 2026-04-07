@@ -24,8 +24,8 @@ Following the methodology outlined above, we should always start with the simple
 2. **EXIF Metadata Check:** Since checking metadata is the quickest step, we inspect the file properties. 
 3. Operating on a Windows system, we can easily check this without third-party tools like `exiftool`. I simply right-clicked the `flag.jpg` file, selected **Properties**, and navigated to the **Details** tab.
 
-   <img src="./pic1.png" width="500">
-   *(Note: Remember to replace the image path with your actual screenshot)*
+   <img src="./pic1.png" width="400">
+
 
 4. **Flag Discovery:** Upon inspecting the detailed properties, the flag was plainly visible in the **Author** field. The challenge is solved directly without further complex analysis.
 
