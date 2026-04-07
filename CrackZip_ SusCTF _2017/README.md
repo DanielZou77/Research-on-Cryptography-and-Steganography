@@ -15,7 +15,7 @@ Since the target is a ZIP file, our first step should be to check for **pseudo-e
 1. **Initial Inspection:** Attempted to extract the archive using Bandizip. A password prompt appeared, and the archive's directory revealed a single target file named `flag.txt`.
 2. **Hex Analysis:** Opened the ZIP file in a hex editor (010 Editor) to inspect its underlying file structure and metadata.
 
-   ![010 Editor 界面分析图](./pic1.png)
+   <img src="./pic1.png" width="500">
 
 3. **Pseudo-Encryption Check:** Analyzed the general-purpose bit flags. Both the local file header flag (`frflag`) and the central directory file header flag (`deflag`) are odd numbers. This confirms that the file is genuinely encrypted, successfully ruling out the pseudo-encryption trick.
 4. **Brute-Force Attack:** Loaded the archive into ARCHPR (Advanced Archive Password Recovery). Configured the brute-force parameters to scan a purely numeric range from `0` to `99999999`.
