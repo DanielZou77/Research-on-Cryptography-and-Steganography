@@ -1,7 +1,7 @@
 # CTF Writeup: traffic
 
-\* **Challenge:** traffic
-\* **Event:** NUAACTF 2017
+\* **Challenge:** An image containing information
+\* **Event:** Xp0intCTF 2017
 \* **Category:** Image Steganography
 \* **Difficulty:** 3 (1-10)
 
