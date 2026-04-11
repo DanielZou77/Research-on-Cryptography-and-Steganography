@@ -126,7 +126,7 @@ Processing the audio yielded a `.rar` compressed file. Extracting it gave us a t
 
 Suspecting that the archive itself contained hidden data, we shifted our focus to archive steganography. After checking for appended files and Exif data without success, we analyzed the `.rar` file using 010 Editor.
 
-<img src="./5.png" width="400">
+<img src="./5.png" width="800">
 
 After extensive analysis, we noticed an anomaly regarding `block[1]`. It was identified as a `subblock` type, but its volume was far too large for a standard subblock, indicating a hidden file was nested inside. We located the `HeadType` byte. The following image shows the different HEX values corresponding to different header types:
 
@@ -139,7 +139,7 @@ After extensive analysis, we noticed an anomaly regarding `block[1]`. It was ide
 
 We changed the `HeadType` byte to `0x74` (`FILE_OR_DIR`). However, we ran into an issue: because of CRC (Cyclic Redundancy Check) validation mechanisms, Bandizip failed to correctly extract the hidden file, reporting it as corrupted.
 
-<img src="./7.png" width="400">
+<img src="./7.png" width="600">
 
 To bypass this, I used WinRAR. While it still warned about a corrupted file header, WinRAR can bypass the CRC check and force the extraction. This successfully yielded a file named `STM`.
 
