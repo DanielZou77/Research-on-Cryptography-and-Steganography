@@ -1,4 +1,4 @@
-# CTF Writeup: traffic
+# CTF Writeup: An image containing information
 
 \* **Challenge:** An image containing information
 \* **Event:** Xp0intCTF 2017
